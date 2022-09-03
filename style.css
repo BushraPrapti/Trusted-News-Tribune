@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+html {
+    background-color: #DFDFDF;
+}
+
+* {
+    font-family: Raleway;
+    box-sizing: border-box;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.body-page {
+    background-color: white;
+}
+
+.logo {
+    background-color: rgba(0, 0, 255, 0.616);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 255, 0.616);
+}
+
+
+
+
+
+
+.category-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 8%;
+}
+
+.category-list li {
+    list-style: none;
+}
+
+.category-list li a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 2rem;
+
+
+}
+
+.category-list li :hover {
+    background-color: whitesmoke;
+}
+
+
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    margin-left: 5%;
+}
+
+.navbar-links {
+    height: 100%;
+
+}
+
+.navbar-links ul {
+    display: flex;
+    Margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar-links li {
+    list-style: none;
+
+
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 1rem;
+
+
+}
+
+
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.view-icon {
+    height: 30px;
+    width: 50px;
+}
+
+.author-section {
+    display: flex;
+
+}
+
+.view-icon {
+    margin-left: 40px;
+
+}
+
+.card-title {
+    font-weight: 800;
+    margin-top: 10%;
+
+}
+
+.card-text {
+    font-size: small;
+}
+
+.img-fluid.rounded-start {
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.default {
+    display: flex;
+    margin-left: 9%;
+}
+
+.select {
+    width: 10%;
+    margin-left: 2%;
+    background-color: #DFDFDF;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.buttons {
+    margin-left: 54.5%;
+
+}
+
+.buttons :last-child {
+    margin-left: 10px;
+    border-color: rgba(0, 0, 255, 0.616);
+    color: rgba(0, 0, 255, 0.616);
+    ;
+}
+
+
+/* Footer  */
+footer {
+    background-color: lightgray;
+    padding: 1.6rem 1rem;
+    text-align: center;
+
+}
+
+footer p {
+    color: grey;
+}
+
+
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
